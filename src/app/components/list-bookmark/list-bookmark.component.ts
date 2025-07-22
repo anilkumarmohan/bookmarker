@@ -9,11 +9,10 @@ import { selectAllBookmarks } from '../../store/selectors/bookmark.selectors';
 import { loadBookmarks } from '../../store/actions/bookmark.actions';
 
 @Component({
-  selector: 'app-list-bookmark',
-  standalone: true,
-  imports: [HeaderComponent, MatIcon, MatTooltipModule],
-  templateUrl: './list-bookmark.component.html',
-  styleUrl: './list-bookmark.component.css',
+    selector: 'app-list-bookmark',
+    imports: [HeaderComponent, MatIcon, MatTooltipModule],
+    templateUrl: './list-bookmark.component.html',
+    styleUrl: './list-bookmark.component.css'
 })
 export class ListBookmarkComponent {
   bookmarks$: Observable<Bookmark[]>;

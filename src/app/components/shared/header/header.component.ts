@@ -3,11 +3,10 @@ import { FilterBookmarkComponent } from "../filter-bookmark/filter-bookmark.comp
 import { MatIcon } from "@angular/material/icon";
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [FilterBookmarkComponent, MatIcon],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+    selector: 'app-header',
+    imports: [FilterBookmarkComponent, MatIcon],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.css'
 })
 export class HeaderComponent {
   // openNav() {
