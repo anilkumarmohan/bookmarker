@@ -1,0 +1,16 @@
+{
+    "bookmarks": [
+        {
+            "id": 1,
+            "title": "Angular Documentation",
+            "url": "https://angular.io/docs",
+            "creationDate": "2023-10-01T12:00:00Z"
+        },
+        {
+            "id": 2,
+            "title": "TypeScript Handbook",
+            "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+            "creationDate": "2023-10-02T12:00:00Z"
+        }
+    ]
+}

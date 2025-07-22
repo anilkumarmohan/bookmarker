@@ -1,0 +1,58 @@
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+main {
+    padding: 30px;
+    /* background-image: linear-gradient(red, yellow); */
+}
+
+.container {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 1px lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px lightgrey;
+}
+
+.content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 10px
+}
+
+.edit-icon {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.bookmark-data {
+    display: inline-flex;
+    width: 30vw;
+    flex-direction: column
+}
+
+h3 {
+    padding-top: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+    color: slategrey;
+}
+
+.add-bookmark{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
