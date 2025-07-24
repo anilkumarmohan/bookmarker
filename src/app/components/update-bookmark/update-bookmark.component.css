@@ -1,0 +1,65 @@
+.container {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 1px lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px lightgrey;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    ;
+}
+
+main {
+    padding: 30px;
+}
+
+.form-group {
+    display: flex;
+    gap: 2vw;
+    padding-top: 15px
+}
+
+.url-field {
+    width: 25vw;
+}
+
+.bookmark-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    --mat-form-field-container-height: 40px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.mat-mdc-button:not(:disabled) {
+    background-color: #005cbb;
+    color: #fff;
+}
+
+.mat-mdc-button:disabled {
+    border: solid 1px;
+    background-color: lightgrey;
+}
+
+.submit-button {
+    padding: 15px 5px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}

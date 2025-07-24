@@ -1,24 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div>
-    <!-- <span (click)="openNav()">&#9776;</span> -->
-     <mat-icon class="home-btn">home</mat-icon>
+    <mat-icon class="home-btn" routerLink="/bookmarks" aria-hidden="false">home</mat-icon>
   </div>
+
   <div class="collapse navbar-collapse center me-4" id="navbarSupportedContent">
-    <app-filter-bookmark></app-filter-bookmark>
+    @if(enableFilter()){
+    <app-filter-bookmark></app-filter-bookmark> }
   </div>
 </nav>
-
-<div id="menuSidenav" class="sidenav">
-  <!-- <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a> -->
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link cursor" routerLink="/dashboard">Home</a>
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" routerLink="/dashboard/useraction">Add bookmark</a>
-    </li>
-    <!-- <li class="nav-item active position-absolute bottom-0 pb-5">
-      <a role="button" class="nav-link cursor" (click)="onLogout()">Logout</a>
-    </li> -->
-  </ul>
-</div>

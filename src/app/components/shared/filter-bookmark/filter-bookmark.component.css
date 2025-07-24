@@ -3,13 +3,8 @@
   max-width: 500px;
   width: 100%;
   --mat-form-field-container-height: 40px;
-  /* --mat-form-field-container-vertical-padding: 8px; */
 }
 
 .example-full-width {
   width: 100%;
-}
-
-::ng-deep .mat-form-field.mat-form-field-invalid .mat-input-element {
-    color: #ff33cc;
 }

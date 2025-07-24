@@ -1,0 +1,5 @@
+@if(data.isError){
+  <span class="error" matSnackBarLabel> {{data.message}} ⚠️</span>
+} @else {
+  <span class="success" matSnackBarLabel> {{data.message}} ✅</span>
+}

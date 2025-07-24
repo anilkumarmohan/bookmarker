@@ -1,19 +1,24 @@
-import { Component } from '@angular/core';
-import { FilterBookmarkComponent } from "../filter-bookmark/filter-bookmark.component";
-import { MatIcon } from "@angular/material/icon";
-
+import { Component, inject, signal } from '@angular/core';
+import { FilterBookmarkComponent } from '../filter-bookmark/filter-bookmark.component';
+import { MatIcon } from '@angular/material/icon';
+import { RouterLink, ActivatedRoute } from '@angular/router';
 @Component({
-    selector: 'app-header',
-    imports: [FilterBookmarkComponent, MatIcon],
-    templateUrl: './header.component.html',
-    styleUrl: './header.component.css'
+  selector: 'app-header',
+  standalone: true,
+  imports: [FilterBookmarkComponent, MatIcon, RouterLink],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  // openNav() {
-  //   document.getElementById('menuSidenav')!.style.width = '200px';
-  // }
+  route = inject(ActivatedRoute);
+  enableFilter = signal(false);
 
-  // closeNav() {
-  //   document.getElementById('menuSidenav')!.style.width = '0';
-  // }
+  constructor() {
+    this.route.url.subscribe((url) => {
+      this.enableFilter.set(false);
+      if (url.length === 1) {
+        this.enableFilter.set(true);
+      }
+    });
+  }
 }

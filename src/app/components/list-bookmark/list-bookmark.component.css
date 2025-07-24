@@ -6,7 +6,6 @@
 
 main {
     padding: 30px;
-    /* background-image: linear-gradient(red, yellow); */
 }
 
 .container {
@@ -46,7 +45,7 @@ h3 {
     color: slategrey;
 }
 
-.add-bookmark{
+.add-bookmark {
     width: 30px;
     height: 30px;
     font-size: 30px;
@@ -55,4 +54,24 @@ h3 {
 
 .text-right {
     text-align: right;
+}
+
+.search-info {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    width: 35vw;
+}
+
+.loading,.no-bookmarks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.content-wrapper{
+    height: 75vh;
+    overflow-y: auto;
 }

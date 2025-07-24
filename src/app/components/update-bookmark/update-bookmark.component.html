@@ -1,1 +1,42 @@
-<p>update-bookmark works!</p>
+<header>
+  <app-header></app-header>
+</header>
+<main>
+  <div class="container">
+    <div class="sub-header">
+      <h3>{{ isEditmode() ? "Edit" : "Create" }} bookmark</h3>
+      <mat-icon>bookmark</mat-icon>
+    </div>
+    <div>
+      <form
+        class="bookmark-form"
+        style="font-size: 12px"
+        [formGroup]="createBookmarkForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <div class="form-group">
+          <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="title" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width url-field">
+            <mat-label>URL</mat-label>
+            <input matInput formControlName="url" />
+          </mat-form-field>
+        </div>
+        <div class="submit-button">
+          <button
+            type="submit"
+            [disabled]="!createBookmarkForm.valid || createBookmarkForm.pristine"
+            mat-button="filled"
+          >
+            {{ isEditmode() ? "Update" : "Create" }} Bookmark
+          </button>
+          <button type="button" mat-button="filled" (click)="onCancel()">
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

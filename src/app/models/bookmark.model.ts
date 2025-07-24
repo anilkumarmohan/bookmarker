@@ -1,6 +1,6 @@
 export interface Bookmark {
-  id: number;
+  id: string;
   title: string;
   url: string;
-  creationDate: Date;
+  creationDate: number;
 }

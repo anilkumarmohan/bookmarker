@@ -14,11 +14,15 @@ export class BookmarkService {
     return this.http.get<Bookmark[]>(this.apiUrl);
   }
 
-  //   addBookmark(bookmark: Bookmark): Observable<Bookmark> {
-  //     return this.http.post<Bookmark>(this.apiUrl, bookmark);
-  //   }
+  addBookmark(bookmark: Bookmark): Observable<Bookmark> {
+    return this.http.post<Bookmark>(this.apiUrl, bookmark);
+  }
 
-  //   deleteBookmark(id: number): Observable<void> {
-  //     return this.http.delete<void>(`${this.apiUrl}/${id}`);
-  //   }
+  getBookmarkById(id: number): Observable<Bookmark> {
+    return this.http.get<Bookmark>(`${this.apiUrl}/${id}`);
+  }
+
+  updateBookmark(bookmark: Bookmark): Observable<Bookmark> {
+    return this.http.put<Bookmark>(`${this.apiUrl}/${bookmark.id}`, bookmark);
+  }
 }

@@ -1,16 +1,58 @@
 {
-    "bookmarks": [
-        {
-            "id": 1,
-            "title": "Angular Documentation",
-            "url": "https://angular.io/docs",
-            "creationDate": "2023-10-01T12:00:00Z"
-        },
-        {
-            "id": 2,
-            "title": "TypeScript Handbook",
-            "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
-            "creationDate": "2023-10-02T12:00:00Z"
-        }
-    ]
+  "bookmarks": [
+    {
+      "id": "1",
+      "title": "Angular Documentation",
+      "url": "https://angular.io/docs",
+      "creationDate": 1753311600000
+    },
+    {
+      "id": "2",
+      "title": "TypeScript Handbook",
+      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "creationDate": 1753138800000
+    },
+    {
+      "id": "3",
+      "title": "MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web",
+      "creationDate": 1753052400000
+    },
+    {
+      "id": "4",
+      "title": "CSS Tricks",
+      "url": "https://css-tricks.com/",
+      "creationDate": 1752879600000
+    },
+    {
+      "id": "5",
+      "title": "Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "creationDate": 1752879600000
+    },
+    {
+      "id": "646",
+      "title": "React Tutorial",
+      "url": "https://react.dev/learn",
+      "creationDate": 1753225200000
+    },
+    {
+      "id": "904",
+      "title": "Azure OpenAI",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/create-resource?pivots=web-portal",
+      "creationDate": 1753225200000
+    },
+    {
+      "id": "402",
+      "title": "Facebook",
+      "url": "http://facebook.com",
+      "creationDate": 1753225200000
+    },
+    {
+      "id": "287",
+      "title": "Angular Material",
+      "url": "https://material.angular.dev/",
+      "creationDate": 1753311600000
+    }
+  ]
 }
